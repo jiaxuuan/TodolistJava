@@ -14,7 +14,7 @@
     </path>
     <path id="todolist_new.classpath">
         <pathelement location="bin"/>
-        <path refid="JUnit 5.libraryclasspath"/>
+        <path refid="JUnit 4.libraryclasspath"/>
     </path>
     <target name="init">
         <mkdir dir="bin"/>
