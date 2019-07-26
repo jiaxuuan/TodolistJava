@@ -52,9 +52,14 @@ public class ToDoListTest extends TestCase{
 
 	}
 	@Test
-	public void testRemoveTask() {
-
-	}
+    public void testRemoveTask() {
+        assertNotNull(todoList);
+        todoList.addTask(task1);
+        todoList.addTask(task2);;
+        
+        todoList.removeTask(task1.getDescription());
+        assertNull(todoList.getTask(task1.getDescription()));    
+    }
 	@Test
 	public void testGetCompletedTasks() {
 
