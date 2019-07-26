@@ -62,6 +62,13 @@ public class ToDoListTest extends TestCase{
     }
 	@Test
 	public void testGetCompletedTasks() {
-
+		task1.setComplete(true);
+		task3.setComplete(true);
+		todoList.addTask(task1);
+		todoList.addTask(task2);
+		todoList.addTask(task3);
+		
+		Collection<Task> tasks = todoList.getCompletedTasks();
+		assertEquals(2, tasks.size());
 	}
 }
